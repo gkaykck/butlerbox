@@ -3,7 +3,7 @@
 Butlerbot is a very simple software for Raspberry PI that checks for preconfigured imap accounts for 
 new emails, and if it finds some, it will try to raise a flag by using a very simple servo.
 
-##Installation
+## Installation
 
 ## Usage
 
