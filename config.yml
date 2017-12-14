@@ -1,0 +1,5 @@
+interval: 30
+imap:
+  server: 'server'
+  email: 'email@mail.io'
+  password: '123123'
