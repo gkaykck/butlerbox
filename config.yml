@@ -1,3 +1,6 @@
+pwm_up: 100
+pwm_down: 0
+pwm_pin: 8
 interval: 30
 imap:
   server: 'server'

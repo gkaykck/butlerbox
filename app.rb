@@ -49,6 +49,16 @@ class MailChecker
     sleep(@configuration.interval)
   end
 
+  def raise_flag
+    # We could use the hardware GPIO in future releases.
+    @pwm = RPi::GPIO::PWM.new(@configuration.pwm_pin, @configuration.pwm_up)
+  end
+
+  def lower_flag
+    @pwm.frequency = @configuration.pwm_down
+    @pwm.stop
+  end
+
 end
 
 mailChecker = MailChecker.new
